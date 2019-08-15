@@ -1,0 +1,13 @@
+<img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="chuck">
+<h4>{{ setup }}</h4>
+<br>
+<em *ngIf="!showValue">.....</em>
+<em *ngIf="showValue">{{ value }}</em>
+<br>
+<br>
+<button (click) ="toggleValue()">Show Joke</button>
+<br>
+<br>
+<hr>
+<br>
+<button (click) ="getNewJoke()">New Joke</button>
